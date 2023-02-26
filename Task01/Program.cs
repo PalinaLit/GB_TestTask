@@ -1,9 +1,6 @@
 ﻿
-// 2. Нарисовать блок-схему алгоритма (можно обойтись блок-схемой основной содержательной части, если вы
-// выделяете ее в отдельный метод)
-// 3. Снабдить репозиторий оформленным текстовым описанием решения (файл README.md)
-// 4. Написать программу, решающую поставленную задачу
 
+// 3. Снабдить репозиторий оформленным текстовым описанием решения (файл README.md)
 
 // Задача: Написать программу, которая из имеющегося массива строк формирует массив из строк, длина которых
 // меньше либо равна 3 символа. Первоначальный массив можно ввести с клавиатуры, либо задать на старте
@@ -26,6 +23,17 @@ UserInput(arrayStr);
 Console.WriteLine();
 
 PrintArray(arrayStr);
+Console.WriteLine();
+Console.WriteLine();
+
+string[] arrayStrNew = new string [arrayStr.Length];
+int length = 3;
+
+FindStringArrayElementsSpecificLength(arrayStr, arrayStrNew, length);
+
+Console.WriteLine($"Массив из строк, длина которых меньше либо равна {length} символам");
+Console.WriteLine();
+PrintArray(arrayStrNew);
 
 
 
