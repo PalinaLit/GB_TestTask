@@ -14,3 +14,28 @@
 // ["1234", "1567", "-2", "computer science"] -> ["-2"]
 // ["Russia", "Denmark", "Kazan"] ->
 
+using static Library;
+
+Console.Write("Введите кол-во элементов в массиве:  ");
+int size = int.Parse(Console.ReadLine());
+
+string[] arrayStr = new string [size];
+Console.WriteLine();
+
+UserInput(arrayStr);
+Console.WriteLine();
+
+PrintArray(arrayStr);
+
+
+
+
+
+
+
+
+
+
+
+
+
